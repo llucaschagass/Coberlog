@@ -113,14 +113,14 @@ export default function WarehouseDrawing({ width = 800, height = 500 }: Warehous
                 custom={2.6}
                 style={shape}
             />
-             <motion.line
+            <motion.line
                 x1="250" y1="200" x2="500" y2="100"
                 stroke={palette.primary}
                 variants={draw}
                 custom={2.8}
                 style={shape}
             />
-             <motion.line
+            <motion.line
                 x1="750" y1="200" x2="500" y2="100"
                 stroke={palette.primary}
                 variants={draw}
