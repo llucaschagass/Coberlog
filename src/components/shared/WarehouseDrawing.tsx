@@ -2,7 +2,7 @@
 
 import { motion, type Variants } from "framer-motion"
 import React from "react"
-import { palette } from "../assets/styles/palette"
+import { palette } from "../../assets/styles/palette"
 
 const draw: Variants = {
     hidden: { pathLength: 0, opacity: 0 },
