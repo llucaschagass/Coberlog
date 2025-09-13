@@ -1,14 +1,18 @@
 import Header from './components/shared/Header';
 import Footer from './components/shared/Footer';
-import './index.css';
+import ScrollUpButton from './components/shared/ScrollUp';
+import './App.css';
+
 
 export default function App() {
   return (
     <>
+      <ScrollUpButton />
+    
       <Header />
 
-      <main className="main-content">
-        
+      <main>
+
       </main>
 
       <Footer />

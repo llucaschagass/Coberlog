@@ -1,0 +1,57 @@
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-surface);
+  border-top: 4px solid var(--color-primary);
+  z-index: 10;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logo2 img {
+  height: 56px;
+  margin: 0 0 0 0px;
+}
+
+.logo2 {
+  height: 6em;
+  padding: 0.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo2:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo2.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.socialIcons {
+  display: flex;
+  gap: 20px;
+}
+
+.socialIcons a {
+  color: var(--text-on-primary);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: var(--color-primary);
+  transform: scale(1.2);
+}
