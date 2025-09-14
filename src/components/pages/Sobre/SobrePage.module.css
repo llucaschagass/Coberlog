@@ -1,8 +1,8 @@
 .sobreSection {
   padding: 60px 20px;
-  background-color: #222222; /* Fundo escuro */
-  color: #FFFFFF; /* Texto principal branco */
-  min-height: 80vh; /* Opcional: garante que a seção preencha a tela */
+  background-color: #222222;
+  color: #FFFFFF;
+  min-height: 80vh;
 }
 
 .container {
@@ -22,10 +22,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-}
-
-.missaoCard {
-  
 }
 
 .cardTitle {
