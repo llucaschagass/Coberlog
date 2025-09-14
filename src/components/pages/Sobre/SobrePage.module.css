@@ -1,0 +1,78 @@
+.sobreSection {
+  padding: 60px 20px;
+  background-color: #222222; /* Fundo escuro */
+  color: #FFFFFF; /* Texto principal branco */
+  min-height: 80vh; /* Opcional: garante que a seção preencha a tela */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mainTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #FFF;
+  text-align: left;
+}
+
+.missaoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.missaoCard {
+  
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.cardTitle::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #FF9900;
+}
+
+.missaoCard p {
+  color: #CCCCCC;
+  line-height: 1.6;
+}
+
+
+.valuesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #CCCCCC;
+  line-height: 1.7;
+}
+
+.valuesList li {
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .missaoGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .mainTitle {
+    text-align: center;
+  }
+}
