@@ -1,0 +1,149 @@
+/* src/pages/ContatoPage/ContatoPage.module.css */
+
+.contactContainer {
+  padding: 60px 20px;
+  background-color: #222; /* Fundo escuro */
+  color: #FFF;
+  min-height: 80vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mainTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #FFF;
+}
+
+/* Grid principal (Info + Formulário) */
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 colunas */
+  gap: 50px;
+}
+
+/* Coluna da Esquerda (Info) */
+.infoColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoColumn h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  /* Destaque com acento laranja (opcional) */
+  border-left: 4px solid #FF9900; 
+  padding-left: 10px;
+}
+
+.infoColumn p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1rem;
+}
+
+.infoItem svg { /* Estilo do ícone */
+  color: #FF9900; /* Laranja */
+  font-size: 1.2rem;
+}
+
+/* Coluna da Direita (Formulário) */
+.formColumn {
+  width: 100%;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #eee;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #333; /* Fundo do input */
+  border: 1px solid #555; /* Borda */
+  border-radius: 5px;
+  color: #FFF; /* Texto digitado */
+  font-size: 1rem;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #FF9900; /* Borda laranja no foco */
+}
+
+.submitButton {
+  background-color: #FF9900; /* Laranja */
+  color: #111; /* Texto escuro para contraste */
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: #FFF;
+  color: #111;
+  transform: translateY(-2px);
+}
+
+.submitButton:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+/* Mensagem de sucesso */
+.successMessage {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #333;
+  border-left: 5px solid #25D366; /* Verde sucesso */
+  border-radius: 5px;
+}
+
+.successMessage h2 {
+  color: #25D366;
+  margin-bottom: 15px;
+}
+
+/* Texto de erro de validação */
+.errorText {
+  color: #ff6b6b; /* Vermelho erro */
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 900px) {
+  .contactGrid {
+    grid-template-columns: 1fr; /* Empilha as colunas */
+    gap: 60px; /* Mais espaço vertical */
+  }
+
+  .infoColumn {
+    /* Centraliza a coluna de info no mobile */
+    align-items: center;
+    text-align: center;
+  }
+}
