@@ -27,3 +27,7 @@
     color: var(--white);
     font-size: 30px;
 }
+
+.scrollIcon:hover {
+    font-size: 32px;
+}
