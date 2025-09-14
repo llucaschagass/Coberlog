@@ -1,4 +1,4 @@
-import logo from '../../assets/images/logo-png-branca.png';
+import logo from '../../../assets/images/logo-png-branca.png';
 import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import styles from './Footer.module.css';
 

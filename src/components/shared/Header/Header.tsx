@@ -1,4 +1,4 @@
-import logo from '../../assets/images/logo-png-branca.png';
+import logo from '../../../assets/images/logo-png-branca.png';
 import styles from './Header.module.css';
 
 export default function Header() {

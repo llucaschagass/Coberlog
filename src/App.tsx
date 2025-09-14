@@ -1,6 +1,6 @@
-import Header from './components/shared/Header';
-import Footer from './components/shared/Footer';
-import ScrollUpButton from './components/shared/ScrollUp';
+import Header from './components/shared/Header/Header';
+import Footer from './components/shared/Footer/Footer';
+import ScrollUpButton from './components/shared/ScroollUp/ScrollUp';
 import './App.css';
 
 
