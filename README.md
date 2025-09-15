@@ -1,69 +1,39 @@
-# React + TypeScript + Vite
+# COBERLOG
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📝 Descrição do Projeto
 
-Currently, two official plugins are available:
+Este projeto é o desenvolvimento de uma webpage estática para a empresa Coberlog, com o objetivo de apresentar seus serviços e segmentos de atuação. A página foi construída utilizando React e a estrutura de build do Vite para um desenvolvimento rápido e moderno.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+A estrutura principal do projeto se baseia nas seguintes tecnologias:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* **[React](https://reactjs.org/)**: Biblioteca para a construção da interface de usuário.
+* **[Vite](https://vitejs.dev/)**: Ferramenta de build para um desenvolvimento front-end mais rápido e otimizado.
+* **[Styled Components](https://styled-components.com/)**: Para estilização de componentes de forma isolada e dinâmica.
+* **[React Router DOM](https://reactrouter.com/)**: Para a criação de rotas e navegação entre as páginas da aplicação.
+* **[Framer Motion](https://www.framer.com/motion/)**: Para a criação de animações complexas e fluidas.
+* **[React Icons](https://react-icons.github.io/react-icons/)**: Para a utilização de ícones populares como componentes React.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🗺️ Roadmap
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+-   [ ] Melhorar o suporte para diversos tipos de dispositivo.
+-   [ ] Adicionar as páginas de conteúdo que faltam.
+-   [ ] Implementar um formulário de contato funcional.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 👨‍💻 Equipe de Desenvolvimento
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+As seguintes pessoas contribuíram para este projeto:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+* [Marco Túlio Salvador Filho](https://github.com/MarcoTSF)
+* [Lucas Chagas](https://github.com/llucaschagass)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ©️ Licença
+
+Este é um projeto de portfólio privado. O código-fonte é disponibilizado publicamente apenas para fins de demonstração. Todos os direitos são reservados aos seus autores, não sendo permitida a cópia, distribuição ou utilização do projeto para outros fins sem autorização prévia.
+
+Veja o arquivo [LICENSE.md](LICENSE.md) para mais informações.
+
+---
+
+![Logo do Projeto](https://github.com/MarcoTSF/COBERLOG/blob/main/src/assets/images/logo-png-original.png?raw=true)
