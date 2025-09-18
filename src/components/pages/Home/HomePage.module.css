@@ -1,12 +1,7 @@
-.homePage {
-  text-align: center;
-}
-
-.carouselContainer {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
 .welcomeSection {
-  padding: 40px;
+  padding: 0 40px 40px 40px;
+}
+
+.welcomeSection h1 {
+  text-align: center;
 }

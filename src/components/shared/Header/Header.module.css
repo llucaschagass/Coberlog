@@ -15,6 +15,7 @@ header {
   padding: 10px 50px;
   max-width: 1400px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .headerContent nav {

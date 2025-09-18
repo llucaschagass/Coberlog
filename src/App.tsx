@@ -19,6 +19,7 @@ export default function App() {
         phoneNumber="5531999887766"
         message="Olá! Vim pelo site da COBERLOG." 
       />
+      
       <Header />
 
       <main>
