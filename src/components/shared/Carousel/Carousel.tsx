@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import imageHome1 from '../../../assets/images/image-home1.jpg';
-import imageHome2 from '../../../assets/images/image-home2.jpg';
-import imageHome3 from '../../../assets/images/image-home3.jpg';
-import imageHome4 from '../../../assets/images/image-home4.jpg';
+import imageHome1 from '../../../assets/images/image-home1.jpeg';
+import imageHome2 from '../../../assets/images/image-home2.jpeg';
+import imageHome3 from '../../../assets/images/image-home3.jpeg';
+import imageHome4 from '../../../assets/images/image-home4.jpeg';
 import styles from './Carousel.module.css';
 
 const slides = [

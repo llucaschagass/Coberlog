@@ -1,42 +1,47 @@
 import React from 'react';
 import styles from './SobrePage.module.css';
+import Carousel3D from '../../shared/Carousel3D/Carousel3D';
 
 const SobrePage: React.FC = () => {
   return (
     <section className={styles.sobreSection}>
+
+      <Carousel3D></Carousel3D>
+
       <div className={styles.container}>
         
-        <h2 className={styles.mainTitle}>Institucional</h2>
+        <h2 className={styles.mainTitle}>Conheça mais sobre nossos pilares institucionais</h2>
 
         <div className={styles.missaoGrid}>
           
           <article className={styles.missaoCard}>
-            <h3 className={styles.cardTitle}>MISSÃO</h3>
+            <h3 className={styles.cardTitle}>NOSSA MISSÃO</h3>
             <p>
-              Apresentar soluções logísticas inovadoras e sustentáveis com 
-              segurança e funcionalidade por meio de produtos e serviços de 
-              excelência, proporcionando uma infraestrutura eficiente para as 
-              necessidades de cada cliente.
+              Apresentar soluções logísticas inovadoras e sustentáveis, 
+              entregando uma infraestrutura eficiente e personalizada que, 
+              com máxima segurança e funcionalidade, transforma os desafios 
+              de cada cliente em crescimento.
             </p>
           </article>
           
           <article className={styles.missaoCard}>
-            <h3 className={styles.cardTitle}>VISÃO</h3>
+            <h3 className={styles.cardTitle}>NOSSA VISÃO</h3>
             <p>
-              Ser a melhor empresa em serviços e produtos no mercado 
-              logístico, reconhecida pelos clientes pelo atendimento, 
-              qualidade e eficiência.
+              Ser a referência em serviços e produtos no mercado logístico, 
+              construindo o reconhecimento de nossos clientes por meio de um 
+              atendimento, qualidade e eficiência que geram confiança e 
+              impulsionam o sucesso a longo prazo.
             </p>
           </article>
           
           <article className={styles.missaoCard}>
-            <h3 className={styles.cardTitle}>VALORES</h3>
+            <h3 className={styles.cardTitle}>NOSSOS VALORES</h3>
             <ul className={styles.valuesList}>
-              <li>Segurança</li>
-              <li>Qualidade</li>
-              <li>Sustentabilidade</li>
-              <li>Responsabilidade</li>
-              <li>Inovação</li>
+              <li>Segurança: <span>Nossa prioridade inegociável em cada operação.</span></li>
+              <li>Qualidade: <span>A busca pela excelência em cada detalhe do processo.</span></li>
+              <li>Sustentabilidade: <span>Operar no presente com total responsabilidade pelo futuro.</span></li>
+              <li>Responsabilidade: <span>A transparência e a integridade em cada compromisso firmado.</span></li>
+              <li>Inovação: <span>O motor que nos move para solucionar desafios e antecipar tendências.</span></li>
             </ul>
           </article>
           

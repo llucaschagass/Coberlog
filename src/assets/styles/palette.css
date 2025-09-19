@@ -70,7 +70,7 @@
 
 	/* Cores de Fundo */
 	--background-body: var(--white);
-	--background-surface: var(--gray-50);
+	--background-surface: var(--gray-100);
 	--background-button: var(--gray-50);
 	
 	/* Cores de Texto */

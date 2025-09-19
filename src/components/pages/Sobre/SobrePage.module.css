@@ -1,13 +1,14 @@
 .sobreSection {
   padding: 60px 20px;
   background-color: #222222;
-  color: #FFFFFF;
+  color: var(--white);
   min-height: 80vh;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 585px;
 }
 
 .mainTitle {
@@ -59,7 +60,8 @@
 }
 
 .valuesList li {
-  font-weight: 500;
+  font-weight: 700;
+  color: var(--white);
 }
 
 @media (max-width: 900px) {

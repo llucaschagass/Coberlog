@@ -1,0 +1,96 @@
+.container {
+  position: relative;
+  width: 318px;
+  margin: 10px auto; 
+  perspective: 780px;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;   
+  animation: rotate360 120s infinite forwards linear;
+}
+
+.carousel__face {   
+  position: absolute;
+  width: 300px;
+  height: 187px;
+  top: 12px;
+  left: 6px;
+  right: 6px;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+  display: flex;
+  background-color: #333;
+  border: 2px solid var(--white);
+}
+
+.faceContent {
+  margin: auto;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--white);
+  font-family: sans-serif;
+}
+
+.faceLogo {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: high-quality;
+}
+
+.carousel__face:nth-child(1) {
+  background-image: url("../../../assets/images/image-home1.jpeg");
+  transform: rotateY(   0deg) translateZ(462px);
+}
+.carousel__face:nth-child(2) {   
+  background-image: url("../../../assets/images/image-home1.jpeg");
+  transform: rotateY(  36deg) translateZ(462px);
+}
+.carousel__face:nth-child(3) {
+  background-image: url("../../../assets/images/image-home1.jpeg");
+  transform: rotateY(  72deg) translateZ(462px);
+}
+.carousel__face:nth-child(4) {
+  background-image: url("../../../assets/images/image-home1.jpeg");
+  transform: rotateY( 108deg) translateZ(462px);
+}
+.carousel__face:nth-child(5) {   
+  background-image: url("../../../assets/images/image-home1.jpeg");
+  transform: rotateY( 144deg) translateZ(462px);
+}
+.carousel__face:nth-child(6) {   
+  background-image: url("../../../assets/images/image-home1.jpeg");
+  transform: rotateY( 180deg) translateZ(462px);
+}
+.carousel__face:nth-child(7) {   
+  background-image: url("../../../assets/images/image-home1.jpeg");
+  transform: rotateY( 216deg) translateZ(462px);
+}
+.carousel__face:nth-child(8) {
+  background-image: url("../../../assets/images/image-home1.jpeg");
+  transform: rotateY( 252deg) translateZ(462px);
+}
+.carousel__face:nth-child(9) {
+  background-image: url("../../../assets/images/image-home1.jpeg");
+  transform: rotateY( 288deg) translateZ(462px);
+}
+
+.carousel__face:nth-child(10) {
+  background-image: url("../../../assets/images/image-home1.jpeg");
+  transform: rotateY( 324deg) translateZ(462px);
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}

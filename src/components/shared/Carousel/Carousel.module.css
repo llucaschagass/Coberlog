@@ -25,13 +25,11 @@
   width: 100%;
   object-fit: cover;
   object-position: center;
-  filter: blur(2px) brightness(90%);
-  transition: filter 0.3s ease;
 }
 
 .carouselCaption {
   position: absolute;
-  top: 4rem;
+  top: 46%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
@@ -50,7 +48,7 @@
   color: #212529;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .carouselControlPrev,
