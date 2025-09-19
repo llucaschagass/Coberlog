@@ -29,6 +29,7 @@ header {
   color: var(--text-on-primary);
   font-weight: 500;
   transition: color 0.25s;
+  font-size: 20px;
 }
 
 .headerContent nav a:hover {

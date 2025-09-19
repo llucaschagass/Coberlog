@@ -7,10 +7,10 @@ import imageHome4 from '../../../assets/images/image-home4.jpeg';
 import styles from './Carousel.module.css';
 
 const slides = [
-    { src: imageHome1, caption: "Transformando desafios em oportunidades" },
-    { src: imageHome2, caption: "Transformando desafios em oportunidades" },
-    { src: imageHome3, caption: "Transformando desafios em oportunidades" },
-    { src: imageHome4, caption: "Transformando desafios em oportunidades" }
+    { src: imageHome1, caption: "Transformando desafios em soluções" },
+    { src: imageHome2, caption: "Transformando desafios em soluções" },
+    { src: imageHome3, caption: "Transformando desafios em soluções" },
+    { src: imageHome4, caption: "Transformando desafios em soluções" }
 ];
 
 export function CarouselHome() {
