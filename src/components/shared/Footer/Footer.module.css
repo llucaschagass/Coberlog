@@ -35,11 +35,11 @@ footer {
 }
 
 .logo2:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #646cff)  brightness(1.4);
 }
 
 .logo2.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #61dafb)  brightness(1.4);
 }
 
 .socialIcons {

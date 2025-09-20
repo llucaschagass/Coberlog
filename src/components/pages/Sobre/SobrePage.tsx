@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from './SobrePage.module.css';
 import Carousel3D from '../../shared/Carousel3D/Carousel3D';
+import missao from '../../../assets/images/icons/missao.png';
+import visao from '../../../assets/images/icons/visao.png';
+import valor from '../../../assets/images/icons/valor.png';
 
 const SobrePage: React.FC = () => {
   return (
@@ -15,7 +18,8 @@ const SobrePage: React.FC = () => {
         <div className={styles.missaoGrid}>
           
           <article className={styles.missaoCard}>
-            <h3 className={styles.cardTitle}>NOSSA MISSÃO</h3>
+            <img src={missao} alt="Ícone de Missão" className={styles.cardIcon} />
+            <h3 className={styles.cardTitle}>MISSÃO</h3>
             <p>
               Apresentar soluções logísticas inovadoras e sustentáveis, 
               entregando uma infraestrutura eficiente e personalizada que, 
@@ -25,7 +29,8 @@ const SobrePage: React.FC = () => {
           </article>
           
           <article className={styles.missaoCard}>
-            <h3 className={styles.cardTitle}>NOSSA VISÃO</h3>
+            <img src={visao} alt="Ícone de Visão" className={styles.cardIcon} />
+            <h3 className={styles.cardTitle}>VISÃO</h3>
             <p>
               Ser a referência em serviços e produtos no mercado logístico, 
               construindo o reconhecimento de nossos clientes por meio de um 
@@ -35,7 +40,8 @@ const SobrePage: React.FC = () => {
           </article>
           
           <article className={styles.missaoCard}>
-            <h3 className={styles.cardTitle}>NOSSOS VALORES</h3>
+            <img src={valor} alt="Ícone de Valor" className={styles.cardIcon} />
+            <h3 className={styles.cardTitle}>VALORES</h3>
             <ul className={styles.valuesList}>
               <li>Segurança: <span>Nossa prioridade inegociável em cada operação.</span></li>
               <li>Qualidade: <span>A busca pela excelência em cada detalhe do processo.</span></li>

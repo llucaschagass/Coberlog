@@ -47,7 +47,7 @@ header {
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #646cff)  brightness(1.4);
 }
 
 .logo img {
@@ -56,5 +56,5 @@ header {
 }
 
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #61dafb)  brightness(1.4);
 }
