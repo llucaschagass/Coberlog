@@ -1,28 +1,23 @@
-import styles from './PreFooter.module.css';
+import { Link } from 'react-router-dom';
+import { FaBuilding, FaTags, FaCogs, FaEnvelope } from 'react-icons/fa';
+import styles from './PreFooter.module.css'
 
 const PreFooter = () => {
-    const columnsData = [
-        { title: 'Empresa', links: ['Sobre Nós', 'Carreiras', 'Imprensa'] },
-        { title: 'Produtos', links: ['Produto A', 'Produto B', 'Produto C'] },
-        { title: 'Recursos', links: ['Blog', 'Documentação', 'Suporte'] },
-        { title: 'Legal', links: ['Privacidade', 'Termos', 'Licenças'] },
-        { title: 'Contato', links: ['Fale Conosco', 'Endereços', 'Parcerias'] },
+    const cardsData = [
+        { title: 'Empresa', icon: <FaBuilding />, path: '/sobre' },
+        { title: 'Produtos', icon: <FaTags />, path: '/produtos' },
+        { title: 'Serviços', icon: <FaCogs />, path: '/servicos' },
+        { title: 'Contato', icon: <FaEnvelope />, path: '/contato' },
     ];
 
     return (
         <footer className={styles.preFooterContainer}>
         <div className={styles.contentWrapper}>
-            {columnsData.map((column, index) => (
-            <div key={index} className={styles.column}>
-                <h3 className={styles.columnTitle}>{column.title}</h3>
-                <ul className={styles.linkList}>
-                {column.links.map((link, linkIndex) => (
-                    <li key={linkIndex}>
-                    <a href="#">{link}</a>
-                    </li>
-                ))}
-                </ul>
-            </div>
+            {cardsData.map((card, index) => (
+            <Link key={index} to={card.path} className={styles.card}>
+                <h3 className={styles.cardTitle}>{card.title}</h3>
+                <div className={styles.cardIcon}>{card.icon}</div>
+            </Link>
             ))}
         </div>
         </footer>
