@@ -1,0 +1,64 @@
+.preFooterContainer {
+  background-color: var(--background-body); 
+  padding: 60px 0;
+  border-top: 4px solid var(--color-primary);
+  position: relative;
+  color: var(--text-body);
+}
+
+.contentWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; 
+}
+
+.column {
+  flex: 1;
+  min-width: 180px; 
+  padding: 0 15px;
+  border-right: 1px solid var(--color-primary);
+}
+
+.column:last-child {
+  border-right: none;
+}
+
+.columnTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--text-body); 
+}
+
+.linkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkList li {
+  margin-bottom: 12px;
+}
+
+.linkList a {
+  display: block;
+  height: 2px;
+  width: 50px;
+  background-color: var(--color-primary);
+  font-size: 0; 
+  color: transparent;
+  transition: filter 0.2s ease-in-out;
+}
+
+.linkList a:hover {
+  filter: brightness(0.9);
+}
+
+.whatsappButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}

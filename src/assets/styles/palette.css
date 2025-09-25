@@ -25,9 +25,6 @@
   --red-500:   #F44336;
   --yellow-500: #FFC107;
 
-
-
-
   /* ----------------- TEMA PADRÃO (DARK MODE) ----------------- */	
 	
   /* Cores de Intenção */
@@ -56,31 +53,28 @@
   --feedback-error: var(--red-500);
   --feedback-warning: var(--yellow-500);
 
-
-
-
   /* ----------------- TEMA CLARO (LIGHT MODE) ----------------- */
   
   .light-mode {
-	/* Cores de Intenção */
-	--color-primary: var(--orange-500);
-	--color-secondary: var(--blue-900);
-	--color-accent: var(--purple-600);
-	--color-accent-hover: var(--purple-500);
+    /* Cores de Intenção */
+    --color-primary: var(--orange-500);
+    --color-secondary: var(--blue-900);
+    --color-accent: var(--purple-600);
+    --color-accent-hover: var(--purple-500);
 
-	/* Cores de Fundo */
-	--background-body: var(--white);
-	--background-surface: var(--gray-100);
-	--background-button: var(--gray-50);
-	
-	/* Cores de Texto */
-	--text-body: var(--gray-800);
-	--text-muted: var(--gray-500);
-	--text-on-primary: var(--white);
-	--text-accent: var(--color-accent);
+    /* Cores de Fundo */
+    --background-body: var(--white);
+    --background-surface: var(--gray-100);
+    --background-button: var(--gray-50);
+    
+    /* Cores de Texto */
+    --text-body: var(--gray-800);
+    --text-muted: var(--gray-500);
+    --text-on-primary: var(--white);
+    --text-accent: var(--color-accent);
 
-	/* Cores de Borda */
-	--border-default: var(--gray-200);
-	--border-interactive: var(--color-accent);
+    /* Cores de Borda */
+    --border-default: var(--gray-200);
+    --border-interactive: var(--color-accent);
   }
 }

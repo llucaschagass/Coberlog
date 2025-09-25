@@ -11,7 +11,6 @@ const HomePage: React.FC = () => {
                 <h1>Bem-vindo à COBERLOG</h1>
             </div>
 
-            
         </div>
     );
 };
