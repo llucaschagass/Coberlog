@@ -1,7 +1,104 @@
 .welcomeSection {
-  padding: 0 40px 40px 40px;
+  padding: 40px;
+  text-align: center;
 }
 
 .welcomeSection h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.aboutSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+}
+
+.aboutImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.aboutText h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #FF9900;
+}
+
+.aboutText p {
+  color: #ccc;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.featuresSection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 40px 20px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+}
+
+.featureItem {
   text-align: center;
+}
+
+.featureIcon {
+  font-size: 3rem;
+  color: #FF9900;
+  margin-bottom: 20px;
+}
+
+.featureItem h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.featureItem p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.ctaSection {
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ctaSection h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.ctaSection p {
+  color: #ccc;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .aboutSection {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .featuresSection {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .featuresSection {
+    grid-template-columns: 1fr;
+  }
 }

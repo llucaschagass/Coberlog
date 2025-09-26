@@ -1,8 +1,7 @@
 "use client"
-
 import { motion, type Variants } from "framer-motion"
 import React from "react"
-import '../../assets/styles/palette.css'
+import '../../../assets/styles/palette.css'
 
 const draw: Variants = {
     hidden: { pathLength: 0, opacity: 0 },
@@ -12,7 +11,14 @@ const draw: Variants = {
             pathLength: 1,
             opacity: 1,
             transition: {
-                pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
+                pathLength: { 
+                    delay, 
+                    type: "spring", 
+                    duration: 1.5, 
+                    bounce: 0, 
+                    repeat: Infinity,
+                    repeatType: "loop",
+                    repeatDelay: 2, },
                 opacity: { delay, duration: 0.01 },
             },
         }
