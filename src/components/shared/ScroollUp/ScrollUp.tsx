@@ -5,7 +5,7 @@ import styles from './ScrollUp.module.css';
 const ScrollUpButton: React.FC = () => {
     const [isVisible, setIsVisible] = useState(false);
 
-    const SHOW_THRESHOLD = 500;
+    const SHOW_THRESHOLD = 550;
 
     const handleScroll = () => {
         if (window.scrollY > SHOW_THRESHOLD) {

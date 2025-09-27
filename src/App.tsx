@@ -7,7 +7,6 @@ import Header from './components/shared/Header/Header';
 import Footer from './components/shared/Footer/Footer';
 import ScrollUpButton from './components/shared/ScroollUp/ScrollUp';
 import WhatsAppButton from './components/shared/WhatsAppButton/WhatsAppButton';
-import PreFooter from './components/shared/PreFooter/PreFooter';
 {/*import ServicosPage from './components/pages/Servicos/ServicosPage';*/}
 import './App.css';
 
@@ -35,7 +34,6 @@ export default function App() {
         </Routes>
       </main>
 
-      <PreFooter></PreFooter>
       <Footer />
 
     </BrowserRouter>
