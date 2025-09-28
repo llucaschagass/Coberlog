@@ -2,7 +2,7 @@
   max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
-  color: #fff;
+  color: var(--white);
 }
 
 .introSection {
@@ -15,11 +15,11 @@
   font-size: 2.8rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #FF9900;
+  color: var(--color-primary);
 }
 
 .introSection p {
-  color: #ccc;
+  color: var(--gray-200);
   line-height: 1.7;
   font-size: 1.1rem;
   margin-bottom: 15px;
@@ -31,14 +31,14 @@
   flex-wrap: wrap;
   gap: 15px;
   margin-bottom: 40px;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid var(--gray-500);
   padding-bottom: 20px;
 }
 
 .tabsNav button {
   background-color: transparent;
-  border: 1px solid #555;
-  color: #ccc;
+  border: 1px solid var(--gray-500);
+  color: var(--gray-200);
   padding: 10px 20px;
   border-radius: 20px;
   cursor: pointer;
@@ -48,15 +48,15 @@
 }
 
 .tabsNav button:hover {
-  background-color: #FF9900;
-  color: #111;
-  border-color: #FF9900;
+  background-color: var(--color-primary);
+  color: var(--black);
+  border-color: var(--color-primary);
 }
 
 .tabsNav button.active {
-  background-color: #FF9900;
-  color: #111;
-  border-color: #FF9900;
+  background-color: var(--color-primary);
+  color: var(--black);
+  border-color: var(--color-primary);
   font-weight: bold;
 }
 
@@ -87,7 +87,7 @@
   font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 25px;
-  color: #FF9900;
+  color: var(--color-primary);
 }
 
 .serviceList {
@@ -101,12 +101,12 @@
   align-items: center;
   gap: 15px;
   font-size: 1.1rem;
-  color: #ccc;
+  color: var(--gray-200);
   margin-bottom: 15px;
 }
 
 .listIcon {
-  color: #FF9900;
+  color: var(--color-primary);
   font-size: 1.2rem;
   flex-shrink: 0;
 }

@@ -11,13 +11,13 @@
   flex-wrap: wrap;
   gap: 15px;
   margin-bottom: 40px;
-  border-bottom: 1px solid var(--gray-800);
+  border-bottom: 1px solid var(--gray-500);
   padding-bottom: 20px;
 }
 
 .tabsNav button {
   background-color: transparent;
-  border: 1px solid var(--gray-800);
+  border: 1px solid var(--gray-500);
   color: var(--gray-500);
   padding: 10px 20px;
   border-radius: 20px;
@@ -29,13 +29,13 @@
 
 .tabsNav button:hover {
   background-color: var(--color-primary);
-  color: #111;
+  color: var(--black);
   border-color: var(--color-primary);
 }
 
 .tabsNav button.active {
   background-color: var(--color-primary);
-  color: #111;
+  color: var(--black);
   border-color: var(--color-primary);
   font-weight: bold;
 }
