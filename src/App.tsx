@@ -8,6 +8,7 @@ import Header from './components/shared/Header/Header';
 import Footer from './components/shared/Footer/Footer';
 import ScrollUpButton from './components/shared/ScroollUp/ScrollUp';
 import WhatsAppButton from './components/shared/WhatsAppButton/WhatsAppButton';
+import PreFooter from './components/shared/PreFooter/PreFooter';
 import './App.css';
 
 
@@ -33,6 +34,8 @@ export default function App() {
           <Route path="/servicos" element={<ServicosPage />} />
         </Routes>
       </main>
+
+      <PreFooter></PreFooter>
 
       <Footer />
 

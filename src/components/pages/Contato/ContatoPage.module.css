@@ -1,7 +1,6 @@
 .contactPage {
-  background: #111;
+  background: var(--background-body);
   color: var(--white);
-  min-height: 100vh;
   padding: 80px 20px;
   display: flex;
   align-items: center;
@@ -39,7 +38,7 @@
 }
 
 .subtitle {
-  color: #b0b0b0;
+  color: var(--gray-500);
   margin-bottom: 30px;
   line-height: 1.6;
 }
@@ -56,7 +55,7 @@
   align-items: center;
   gap: 15px;
   font-size: 1rem;
-  color: #d0d0d0;
+  color: var(--gray-200);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -111,7 +110,7 @@
   position: absolute;
   top: 15px;
   left: 15px;
-  color: #a0a0a0;
+  color: var(--gray-200);
   pointer-events: none;
   transition: all 0.2s ease;
 }
@@ -172,7 +171,7 @@
 }
 
 .successMessage p {
-  color: #b0b0b0;
+  color: var(--gray-500);
   font-size: 1.1rem;
 }
 

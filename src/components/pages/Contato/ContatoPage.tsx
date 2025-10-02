@@ -4,7 +4,6 @@ import styles from './ContatoPage.module.css';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaCheckCircle } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 
-// Definindo os tipos para o estado do formulário e erros
 type FormState = {
   name: string;
   email: string;

@@ -3,7 +3,6 @@ import Carousel from '../../shared/Carousel/Carousel';
 import styles from './HomePage.module.css';
 import { FaBolt, FaCogs, FaShieldAlt, FaDollarSign } from 'react-icons/fa';
 import WarehouseDrawing from '../../shared/WarehouseDrawing/WarehouseDrawing';
-import PreFooter from '../../shared/PreFooter/PreFooter';
 
 
 const HomePage: React.FC = () => {
@@ -58,8 +57,6 @@ const HomePage: React.FC = () => {
                 <h2>É um prazer receber você aqui.</h2>
                 <p>Navegue pelo nosso site e veja todas as vantagens que a COBERLOG tem a oferecer ao seu negócio.</p>
             </section>
-
-            <PreFooter></PreFooter>
         </div>
     );
 };
