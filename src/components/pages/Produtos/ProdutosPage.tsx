@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './ProdutosPage.module.css';
-//import imgLonado from '../../../assets/images/galpao-lonado.jpg';
+import imgLonado1 from '../../../assets/images/galpao-lonado-1.jpeg';
+import imgLonado2 from '../../../assets/images/galpao-lonado-2.jpeg';
 //import imgMetalico from '../../../assets/images/galpao-metalico.jpg';
 //import imgTenda from '../../../assets/images/tenda-piramidal.jpg';
 //import imgMezanino from '../../../assets/images/mezanino-metalico.jpg';
@@ -9,11 +10,11 @@ import styles from './ProdutosPage.module.css';
 const productsData = {
     'galpoes-lonados': {
         title: 'Galpões Lonados',
-        //image: imgLonado,
+        image: [imgLonado1, imgLonado2],
         content: (
             <>
                 <p>Nossos Galpões são treliçados; fabricados em Aço Carbono Galvanizado e desenvolvidos com tecnologia de ponta por nosso time de Engenharia. Os projetos flexíveis possibilitam montagem rápida de Galpões de 10 à 50 metros de largura, com pé direito de 5 à 10 metros de altura e comprimento indeterminado, de acordo com sua necessidade.</p>
-                <h4>Especificações Técnicas</h4>
+                <h4>Especificações Técnicas:</h4>
                 {/* Adicionar a tabela aqui depois */}
                 <p>Os Galpões COBERLOG são projetados e fabricados com observância às todas as normas regulamentadoras que tangem a fabricação de edificações metálicas e lonadas, assegurando a estanqueidade dos galpões, segurança e resistência à ventos e intempéries.</p>
                 <p>Os projetos desenvolvidos para atendimento ao seu negócio, podem ser equipados com acessórios de acordo com a necessidade de cada operação, como a instalação de Sistemas SPDA, Iluminação em LED, conforto térmico por exaustores Eólicos ou Cycloar, Calhas Metálicas, Sistemas de Coleta e Armazenamento de água pluvial e demais dispositivos de segurança e conforto operacional que temos à oferecer em nosso mix de produtos.</p>
@@ -93,8 +94,13 @@ const ProdutosPage: React.FC = () => {
 
             <div key={activeTab} className={styles.tabContent}>
                 <div className={styles.productDetail}>
-                    <div className={styles.productImage}>
-                        <img src={activeProduct.image} alt={activeProduct.title} />
+                    <div className={styles.productImages}>
+                        {'image' in activeProduct && Array.isArray(activeProduct.image) && (
+                            <>
+                                <img src={activeProduct.image[0]} alt={`${activeProduct.title} - imagem 1`} />
+                                <img src={activeProduct.image[1]} alt={`${activeProduct.title} - imagem 2`} />
+                            </>
+                        )}
                     </div>
                     <div className={styles.productText}>
                         <h2>{activeProduct.title}</h2>

@@ -87,6 +87,31 @@
     font-weight: 400;
 }
 
+.aboutSection {
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 60px auto 60px auto;
+  padding: 40px;
+  border: 2px solid var(--gray-500);
+  border-radius: 12px;
+  background-color: var(--gray-900); 
+}
+
+.aboutText h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.aboutText p {
+  color: var(--gray-500);
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
 @media (max-width: 900px) {
   .missaoGrid {
     grid-template-columns: 1fr;
