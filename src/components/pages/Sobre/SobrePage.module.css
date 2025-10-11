@@ -66,7 +66,8 @@
 
 .missaoCard p {
   color: var(--gray-500);
-  line-height: 1.6;
+  text-align: justify;
+  font-size: 1.1rem;
 }
 
 .valuesList {
@@ -80,6 +81,8 @@
 .valuesList li {
   font-weight: 700;
   color: var(--white);
+  margin-bottom: 3px;
+  font-size: 1.1rem;
 }
 
 .valuesList li span {
@@ -110,6 +113,8 @@
   color: var(--gray-500);
   line-height: 1.7;
   margin-bottom: 15px;
+  font-size: 1.1rem;
+  text-align: justify;
 }
 
 @media (max-width: 900px) {

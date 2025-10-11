@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import styles from './ProdutosPage.module.css';
+import placeholder from '../../../assets/images/placeholder.jpg';
 import imgLonado1 from '../../../assets/images/galpao-lonado-1.jpeg';
 import imgLonado2 from '../../../assets/images/galpao-lonado-2.jpeg';
-//import imgMetalico from '../../../assets/images/galpao-metalico.jpg';
+import imgMetalico1 from '../../../assets/images/galpao-metalico-1.jpeg';
 //import imgTenda from '../../../assets/images/tenda-piramidal.jpg';
 //import imgMezanino from '../../../assets/images/mezanino-metalico.jpg';
 //import imgSpda from '../../../assets/images/spda-iluminacao.jpg';
@@ -14,8 +15,6 @@ const productsData = {
         content: (
             <>
                 <p>Nossos Galpões são treliçados; fabricados em Aço Carbono Galvanizado e desenvolvidos com tecnologia de ponta por nosso time de Engenharia. Os projetos flexíveis possibilitam montagem rápida de Galpões de 10 à 50 metros de largura, com pé direito de 5 à 10 metros de altura e comprimento indeterminado, de acordo com sua necessidade.</p>
-                <h4>Especificações Técnicas:</h4>
-                {/* Adicionar a tabela aqui depois */}
                 <p>Os Galpões COBERLOG são projetados e fabricados com observância às todas as normas regulamentadoras que tangem a fabricação de edificações metálicas e lonadas, assegurando a estanqueidade dos galpões, segurança e resistência à ventos e intempéries.</p>
                 <p>Os projetos desenvolvidos para atendimento ao seu negócio, podem ser equipados com acessórios de acordo com a necessidade de cada operação, como a instalação de Sistemas SPDA, Iluminação em LED, conforto térmico por exaustores Eólicos ou Cycloar, Calhas Metálicas, Sistemas de Coleta e Armazenamento de água pluvial e demais dispositivos de segurança e conforto operacional que temos à oferecer em nosso mix de produtos.</p>
                 <p>A qualidade dos nossos produtos é garantida pela COBERLOG com a tranquilidade que só uma empresa sólida pode oferecer. Nossos processos de fabricação e montagem são executados por profissionais experientes, capacitados e acompanhados pelos nossos controles de qualidade e políticas internas.</p>
@@ -25,7 +24,7 @@ const productsData = {
     },
     'galpoes-metalicos': {
         title: 'Galpões Metálicos',
-        //image: imgMetalico,
+        image: [imgMetalico1],
         content: (
             <>
                 <p>Com o objetivo de atender às particularidades de cada negócio, a COBERLOG possui uma linha de Galpões com revestimento, cobertura e fechamentos laterais em telhas metálicas.</p>
@@ -95,11 +94,12 @@ const ProdutosPage: React.FC = () => {
             <div key={activeTab} className={styles.tabContent}>
                 <div className={styles.productDetail}>
                     <div className={styles.productImages}>
-                        {'image' in activeProduct && Array.isArray(activeProduct.image) && (
-                            <>
-                                <img src={activeProduct.image[0]} alt={`${activeProduct.title} - imagem 1`} />
-                                <img src={activeProduct.image[1]} alt={`${activeProduct.title} - imagem 2`} />
-                            </>
+                        {'image' in activeProduct && Array.isArray(activeProduct.image) && activeProduct.image.length > 0 ? (
+                            activeProduct.image.map((imgSrc, index) => (
+                            <img key={index} src={imgSrc} alt={`${activeProduct.title} - imagem ${index + 1}`} />
+                            ))
+                        ) : (
+                            <img src={placeholder} alt="Imagem não disponível" />
                         )}
                     </div>
                     <div className={styles.productText}>

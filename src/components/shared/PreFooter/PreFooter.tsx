@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import { FaBuilding, FaTags, FaCogs, FaEnvelope } from 'react-icons/fa';
+import { FaBuilding, FaCubes, FaTools, FaEnvelope } from 'react-icons/fa';
 import styles from './PreFooter.module.css'
 
 const PreFooter = () => {
     const cardsData = [
         { title: 'Empresa', icon: <FaBuilding />, path: '/sobre' },
-        { title: 'Produtos', icon: <FaTags />, path: '/produtos' },
-        { title: 'Serviços', icon: <FaCogs />, path: '/servicos' },
+        { title: 'Produtos', icon: <FaCubes />, path: '/produtos' },
+        { title: 'Serviços', icon: <FaTools />, path: '/servicos' },
         { title: 'Contato', icon: <FaEnvelope />, path: '/contato' },
     ];
 
