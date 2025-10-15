@@ -56,3 +56,21 @@ footer {
   color: var(--color-primary);
   transform: scale(1.2);
 }
+
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .logo2 img {
+    height: 70px;
+  }
+
+  .socialIcons {
+    gap: 25px;
+  }
+}

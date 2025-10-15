@@ -58,3 +58,38 @@ header {
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafb)  brightness(1.4);
 }
+
+@media (max-width: 768px) {
+  .headerContent {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .headerContent nav {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .headerContent nav a {
+    font-size: 18px;
+  }
+
+  .logo img {
+    height: 80px;
+  }
+}
+
+@media (max-width: 540px) {
+  .headerContent nav {
+    gap: 15px;
+  }
+
+  .headerContent nav a {
+    font-size: 16px;
+  }
+
+  .logo img {
+    height: 70px;
+  }
+}

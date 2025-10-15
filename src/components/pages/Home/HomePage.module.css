@@ -93,19 +93,42 @@
   line-height: 1.7;
 }
 
-@media (max-width: 768px) {
-  .aboutSection {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
+@media (max-width: 900px) {
   .featuresSection {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
+  .welcomeSection h1 {
+    font-size: 2rem;
+  }
+
+  .aboutSection {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  
+  .aboutText h2 {
+    font-size: 1.8rem;
+  }
+
+  .aboutText p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 540px) {
   .featuresSection {
     grid-template-columns: 1fr;
+  }
+
+  .welcomeSection {
+    padding: 30px 15px;
+  }
+
+  .aboutSection,
+  .featuresSection {
+    margin-bottom: 40px;
   }
 }
