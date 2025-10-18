@@ -114,12 +114,72 @@
 }
 
 @media (max-width: 768px) {
-  .serviceDetail {
-    grid-template-columns: 1fr;
+  .servicesPage {
+    padding: 15px;
+    margin-top: 20px;
   }
 
-  .serviceImage {
+  .introSection h1 {
+    font-size: 2.2rem;
+  }
+
+  .introSection p {
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+  .tabsNav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    overflow-x: visible;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .tabsNav button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    border-radius: 15px;
+  }
+
+  .serviceDetail {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .serviceImage img {
     max-height: 300px;
-    overflow: hidden;
+  }
+
+  .serviceText h2 {
+    font-size: 1.8rem;
+    text-align: center; 
+  }
+
+  .serviceList li {
+    font-size: 1rem;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 540px) {
+  .introSection {
+    margin-bottom: 30px;
+  }
+
+  .introSection h1 {
+    font-size: 2rem;
+  }
+
+  .tabsNav button {
+    font-size: 0.85rem; 
+    padding: 6px 12px;
+  }
+
+  .serviceText h2 {
+    font-size: 1.6rem;
   }
 }

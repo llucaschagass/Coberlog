@@ -57,7 +57,7 @@ const SobrePage: React.FC = () => {
                         <p>
                             Fundada com o propósito de oferecer soluções inteligentes em coberturas industriais e logísticas, 
                             a <strong>COBERLOG</strong> se destaca pela fabricação e montagem de 
-                            <strong> galpões lonados, metálicos, mezaninos e tendas estruturadas</strong>. 
+                            <strong> galpões lonados, metálicos, mezaninos e tendas piramidais </strong>. 
                             Sua reputação é resultado de um trabalho pautado em 
                             <strong> qualidade, segurança e inovação contínua</strong>.
                         </p>
