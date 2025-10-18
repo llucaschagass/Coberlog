@@ -6,7 +6,8 @@ import imgLonado2 from '../../../assets/images/galpao-lonado-2.jpeg';
 import imgMetalico1 from '../../../assets/images/galpao-metalico-1.jpeg';
 import imgTenda1 from '../../../assets/images/tenda-piramidal.jpeg';
 //import imgMezanino from '../../../assets/images/mezanino-metalico.jpeg';
-//import imgSpda from '../../../assets/images/spda-iluminacao.jpg';
+import imgSpda1 from '../../../assets/images/spda-iluminacao-1.jpg';
+import imgSpda2 from '../../../assets/images/spda-iluminacao-2.jpg';
 
 const productsData = {
     'galpoes-lonados': {
@@ -56,7 +57,7 @@ const productsData = {
     },
     'spda-iluminacao': {
         title: 'Projetos de SPDA e Iluminação',
-        //image: imgSpda,
+        image: [imgSpda1, imgSpda2],
         content: (
             <>
                 <p>Alguns acessórios devem ser considerados em projetos e compreendidos muito além de suas atribuições de conforto e qualidade.</p>
