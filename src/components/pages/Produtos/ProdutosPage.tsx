@@ -4,8 +4,8 @@ import placeholder from '../../../assets/images/placeholder.jpg';
 import imgLonado1 from '../../../assets/images/galpao-lonado-1.jpeg';
 import imgLonado2 from '../../../assets/images/galpao-lonado-2.jpeg';
 import imgMetalico1 from '../../../assets/images/galpao-metalico-1.jpeg';
-//import imgTenda from '../../../assets/images/tenda-piramidal.jpg';
-//import imgMezanino from '../../../assets/images/mezanino-metalico.jpg';
+import imgTenda1 from '../../../assets/images/tenda-piramidal.jpeg';
+//import imgMezanino from '../../../assets/images/mezanino-metalico.jpeg';
 //import imgSpda from '../../../assets/images/spda-iluminacao.jpg';
 
 const productsData = {
@@ -34,7 +34,7 @@ const productsData = {
     },
     'tendas-piramidais': {
         title: 'Tendas Piramidais',
-        //image: imgTenda,
+        image: [imgTenda1],
         content: (
             <>
                 <p>As Tendas COBERLOG possuem uma vasta aplicabilidade quando a necessidade é por cobertura de pequenas áreas, seja na indústria, no agro negócio ou na montagem de eventos.</p>

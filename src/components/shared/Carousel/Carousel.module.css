@@ -1,7 +1,7 @@
 .carousel {
   position: relative;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 40px auto;
   overflow: hidden;
   border-radius: 15px;
@@ -10,7 +10,7 @@
 
 .carouselInner {
   display: flex;
-  transition: transform 0.5s ease-in-out; 
+  transition: transform 0.5s ease-in-out;
 }
 
 .cItem {
@@ -19,24 +19,31 @@
   position: relative;
   flex-shrink: 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .cImg {
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center center;
+  display: block;
+  flex-shrink: 0;
 }
 
 .carouselCaption {
   position: absolute;
-  top: 46%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   z-index: 10;
   text-align: center;
   color: var(--white);
+  width: 90%;
+  max-width: 600px;
 }
-
 
 .customUnderline {
   position: relative;
@@ -106,4 +113,48 @@
 
 .indicator.active {
   background-color: var(--white);
+}
+
+@media (max-width: 1024px) {
+  .cItem {
+    height: 480px;
+  }
+
+  .customUnderline {
+    font-size: 1.2rem;
+  }
+
+  .indicator {
+    width: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cItem {
+    height: 380px;
+  }
+
+  .customUnderline {
+    font-size: 1rem;
+    padding: 6px 14px;
+  }
+
+  .indicator {
+    width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cItem {
+    height: 300px;
+  }
+
+  .customUnderline {
+    font-size: 0.9rem;
+  }
+
+  .indicator {
+    width: 35px;
+    height: 10px;
+  }
 }

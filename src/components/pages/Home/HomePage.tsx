@@ -20,7 +20,7 @@ const HomePage: React.FC = () => {
                     <WarehouseDrawing />
                 </div>
                 <div className={styles.aboutText}>
-                    <h2>20 Anos de Experiência e Inovação</h2>
+                    <h2>QUEM SOMOS?</h2>
                     <p>
                         Somos a COBERLOG, uma empresa especializada em fabricação e montagem de Galpões Lonados e Metálicos, bem como estruturas flexíveis ou definitivas para atendimento a demandas industriais, voltadas a áreas produtivas e de armazenagem.
                     </p>
