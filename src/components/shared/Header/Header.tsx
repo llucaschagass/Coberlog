@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logo from '../../../assets/images/logo-png-branca.png';
 import styles from './Header.module.css';
+import { ThemeToggle } from '../ThemeToggle/ThemeToggle';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,6 +29,10 @@ export default function Header() {
           <Link to="/sobre" onClick={closeMenu}>Sobre</Link>
           <Link to="/contato" onClick={closeMenu}>Contato</Link>
         </nav>
+
+        {/*<div className={styles.themeToggleWrapper}>
+          <ThemeToggle />
+        </div>*/}
       </div>
     </header>
   );
