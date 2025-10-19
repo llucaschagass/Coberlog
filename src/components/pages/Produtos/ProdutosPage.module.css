@@ -88,7 +88,6 @@
   text-align: justify;
 }
 
-/* 🔹 Responsividade */
 @media (max-width: 768px) {
   .productDetail {
     grid-template-columns: 1fr;

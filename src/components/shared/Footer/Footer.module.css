@@ -70,7 +70,6 @@ footer {
   transform: scale(1.2);
 }
 
-/* ===== Tablet (até 768px) ===== */
 @media (max-width: 768px) {
   .footerContent {
     flex-direction: column;
@@ -96,7 +95,6 @@ footer {
   }
 }
 
-/* ===== Mobile (até 540px) ===== */
 @media (max-width: 540px) {
   .footerContent {
     gap: 16px;

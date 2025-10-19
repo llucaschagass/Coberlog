@@ -52,20 +52,20 @@ const ContatoPage: React.FC = () => {
             <p className={styles.subtitle}>Estamos prontos para transformar seus desafios em soluções. Preencha o formulário ou use nossos canais diretos.</p>
             
             <div className={styles.infoList}>
-              <a href="tel:+553131313131" className={styles.infoItem}>
-                <FaPhoneAlt /> <span>(31) 3131-3131</span>
+              <a href="tel:+553131816200" className={styles.infoItem}>
+                <FaPhoneAlt /> <span>(31) 3181-6200</span>
               </a>
               <a href="mailto:contato@coberlog.com.br" className={styles.infoItem}>
                 <FaEnvelope /> <span>contato@coberlog.com.br</span>
               </a>
               <div className={styles.infoItem}>
-                <FaMapMarkerAlt /> <span>Av. Exemplo, 123 - Belo Horizonte, MG</span>
+                <FaMapMarkerAlt /> <span>Funcionários, - Belo Horizonte, MG</span>
               </div>
             </div>
             
             <div className={styles.mapContainer}>
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.931535496356!2d-44.19598288508544!3d-19.9273184866049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6e1722e06c55b%3A0x6854725c485a3c9b!2sPra%C3%A7a%20Sete%20de%20Setembro!5e0!3m2!1spt-BR!2sbr!4v1664567890123!5m2!1spt-BR!2sbr"
+                src="https://maps.google.com/maps?q=Bairro%20Funcion%C3%A1rios%2C%20Belo%20Horizonte&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 

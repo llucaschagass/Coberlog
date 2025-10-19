@@ -79,8 +79,8 @@
 
   .navMenu {
     position: absolute;
-    top: 100%; /* ✅ aparece logo abaixo do header */
-    right: 5vw; /* ✅ alinha à direita */
+    top: 100%;
+    right: 5vw;
     background-color: var(--background-surface);
     border: 2px solid var(--color-primary);
     border-radius: 10px;

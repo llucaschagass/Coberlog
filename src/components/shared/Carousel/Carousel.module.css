@@ -130,21 +130,31 @@
 }
 
 @media (max-width: 768px) {
+  .carouselInner {
+    display: flex;
+    width: 100%;
+    transform: translateX(0);
+  }
+
   .cItem {
-    height: 380px;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
   }
 
-  .customUnderline {
-    font-size: 1rem;
-    padding: 6px 14px;
-  }
-
-  .indicator {
-    width: 50px;
+  .cImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
 @media (max-width: 480px) {
+  .carouselInner {
+    width: 100%;
+  }
+  
   .cItem {
     height: 300px;
   }
