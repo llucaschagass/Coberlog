@@ -30,9 +30,9 @@ export default function Header() {
           <Link to="/contato" onClick={closeMenu}>Contato</Link>
         </nav>
 
-        {/*<div className={styles.themeToggleWrapper}>
+        {<div className={styles.themeToggleWrapper}>
           <ThemeToggle />
-        </div>*/}
+        </div>}
       </div>
     </header>
   );

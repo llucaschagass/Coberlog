@@ -5,7 +5,7 @@ import imgLonado1 from '../../../assets/images/galpao-lonado-1.jpeg';
 import imgLonado2 from '../../../assets/images/galpao-lonado-2.jpeg';
 import imgMetalico1 from '../../../assets/images/galpao-metalico-1.jpeg';
 import imgTenda1 from '../../../assets/images/tenda-piramidal.jpeg';
-import imgMezanino from '../../../assets/images/mezanino-metalico.jpg';
+import imgMezanino1 from '../../../assets/images/mezanino-metalico-1.jpeg';
 import imgSpda1 from '../../../assets/images/spda-iluminacao-1.jpg';
 import imgSpda2 from '../../../assets/images/spda-iluminacao-2.jpg';
 
@@ -47,7 +47,7 @@ const productsData = {
     },
     'mezanino-metalico': {
         title: 'Mezanino Metálico',
-        image: [imgMezanino],
+        image: [imgMezanino1],
         content: (
             <>
                 <p>A indisponibilidade de áreas para expansão de produção, armazenamento ou mesmo de áreas administrativas é uma realidade no mercado, onde o metro quadrado é cada vez mais caro e escasso, fazendo com que as empresas precisem identificar formas de um melhor aproveitamento dos espaços disponíveis.</p>

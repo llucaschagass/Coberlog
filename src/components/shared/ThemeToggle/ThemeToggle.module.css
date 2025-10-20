@@ -11,24 +11,10 @@
 }
 
 .button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.150);
 }
 
 .icon {
   display: block;
-  width: 22px;
-  height: 22px;
   transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.iconLight {
-  color: #facc15;
-}
-
-.iconDark {
-  color: #60a5fa;
-}
-
-.rotate {
-  transform: rotate(180deg);
 }

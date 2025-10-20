@@ -1,11 +1,18 @@
 import { useState, useEffect } from "react";
 import { Sun, Moon } from "lucide-react";
+import styles from "./ThemeToggle.module.css";
 
 export function ThemeToggle() {
   const [theme, setTheme] = useState<"light" | "dark">("dark");
 
   useEffect(() => {
-    document.body.classList.toggle("light-mode", theme === "light");
+    if (theme === "light") {
+      document.body.classList.add("light-mode");
+      document.body.classList.remove("dark-mode");
+    } else {
+      document.body.classList.add("dark-mode");
+      document.body.classList.remove("light-mode");
+    }
   }, [theme]);
 
   const toggleTheme = () => {
@@ -15,19 +22,13 @@ export function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-full transition-colors duration-300 hover:bg-gray-700/30"
+      className={styles.button}
       aria-label="Alternar tema"
     >
       {theme === "light" ? (
-        <Sun
-          size={22}
-          className="text-yellow-400 transition-transform duration-300 rotate-0 hover:rotate-180"
-        />
+        <Sun size={22} className={`${styles.icon} ${styles.iconLight}`} />
       ) : (
-        <Moon
-          size={22}
-          className="text-blue-400 transition-transform duration-300 rotate-0 hover:-rotate-180"
-        />
+        <Moon size={22} className={`${styles.icon} ${styles.iconDark}`} />
       )}
     </button>
   );

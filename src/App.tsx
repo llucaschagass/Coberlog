@@ -19,7 +19,7 @@ export default function App() {
       <ScrollUpButton />
       
       <WhatsAppButton 
-        phoneNumber="5531999887766"
+        phoneNumber="553131816200"
         message="Olá! Vim pelo site da COBERLOG." 
       />
       

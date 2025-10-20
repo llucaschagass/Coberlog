@@ -59,7 +59,7 @@ const ContatoPage: React.FC = () => {
                 <FaEnvelope /> <span>contato@coberlog.com.br</span>
               </a>
               <div className={styles.infoItem}>
-                <FaMapMarkerAlt /> <span>Funcionários, - Belo Horizonte, MG</span>
+                <FaMapMarkerAlt /> <span>Funcionários - Belo Horizonte, MG</span>
               </div>
             </div>
             
