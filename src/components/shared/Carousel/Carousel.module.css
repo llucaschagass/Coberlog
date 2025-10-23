@@ -130,6 +130,11 @@
 }
 
 @media (max-width: 768px) {
+  .carousel {
+    width: 95%;
+    margin: 24px auto;
+  }
+
   .carouselInner {
     display: flex;
     width: 100%;
@@ -141,6 +146,7 @@
     width: 100%;
     min-width: 100%;
     box-sizing: border-box;
+    height: 380px;
   }
 
   .cImg {
@@ -148,9 +154,29 @@
     height: 100%;
     object-fit: cover;
   }
+
+  .customUnderline {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    line-height: 1.35;
+    max-width: 75%; 
+    box-sizing: border-box;
+  }
+
+  .indicator {
+    width: 50px;
+    height: 10px;
+  }
 }
 
 @media (max-width: 480px) {
+  .carousel {
+    width: 90%;
+    margin: 20px auto;
+  }
+
   .carouselInner {
     width: 100%;
   }
@@ -160,7 +186,13 @@
   }
 
   .customUnderline {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+    padding: 8px 10px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    line-height: 1.35;
+    box-sizing: border-box;
+    max-width: 65%; 
   }
 
   .indicator {

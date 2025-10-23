@@ -14,10 +14,17 @@
   gap: 40px;
   align-items: center;
   max-width: 1200px;
-  margin: 0 auto 60px auto;
+  margin: 40px auto 60px auto;
   padding: 0 20px;
   border: 2px solid var(--gray-500);
   border-radius: 12px;
+}
+
+.aboutImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .aboutImage img {
@@ -49,7 +56,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   max-width: 1200px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto;
   padding: 40px 20px;
   background-color: var(--gray-950);
   border-radius: 12px;
@@ -57,6 +64,7 @@
 
 .featureItem {
   text-align: center;
+  padding: 10px;
 }
 
 .featureIcon {
@@ -106,29 +114,36 @@
 
   .aboutSection {
     grid-template-columns: 1fr;
-    padding: 20px;
+    padding: 30px 20px;
+    width: 90%;
+    margin: 20px auto 40px auto;
   }
   
   .aboutText h2 {
     font-size: 1.8rem;
+    margin-top: 15px;
   }
 
   .aboutText p {
     font-size: 1rem;
+    text-align: left;
+    padding: 0;
   }
 }
 
 @media (max-width: 540px) {
   .featuresSection {
     grid-template-columns: 1fr;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .welcomeSection {
     padding: 30px 15px;
   }
 
-  .aboutSection,
   .featuresSection {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }

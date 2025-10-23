@@ -30,21 +30,18 @@ const draw: Variants = {
 
 type WarehouseDrawingProps = {
     width?: number | string;
-    height?: number | string;
 };
 
-export default function WarehouseDrawing({ width = 800, height = 500 }: WarehouseDrawingProps) {
+export default function WarehouseDrawing({ width = 800 }: WarehouseDrawingProps) {
     return (
         <div className={styles.wrapper}>
             <motion.svg
                 width={width}
-                height={height}
                 viewBox="100 80 700 350"
                 initial="hidden"
                 animate="visible"
                 style={image}
             >
-                {/* Base */}
                 <motion.line
                     x1="150" y1="400" x2="650" y2="400"
                     style={{ 
@@ -54,7 +51,6 @@ export default function WarehouseDrawing({ width = 800, height = 500 }: Warehous
                     variants={draw}
                     custom={1}
                 />
-                {/* Parede Esquerda */}
                 <motion.line
                     x1="150" y1="400" x2="150" y2="250"
                     style={{ 
@@ -64,7 +60,6 @@ export default function WarehouseDrawing({ width = 800, height = 500 }: Warehous
                     variants={draw}
                     custom={1.5}
                 />
-                {/* Parede Direita */}
                 <motion.line
                     x1="650" y1="400" x2="650" y2="250"
                     style={{ 
@@ -74,7 +69,6 @@ export default function WarehouseDrawing({ width = 800, height = 500 }: Warehous
                     variants={draw}
                     custom={1.5}
                 />
-                {/* Telhado Esquerdo */}
                 <motion.line
                     x1="150" y1="250" x2="400" y2="150"
                     style={{ 
@@ -84,7 +78,6 @@ export default function WarehouseDrawing({ width = 800, height = 500 }: Warehous
                     variants={draw}
                     custom={2}
                 />
-                {/* Telhado Direito */}
                 <motion.line
                     x1="650" y1="250" x2="400" y2="150"
                     style={{ 
@@ -94,7 +87,6 @@ export default function WarehouseDrawing({ width = 800, height = 500 }: Warehous
                     variants={draw}
                     custom={2}
                 />
-                {/* Conexão inferior direita (parede) */}
                 <motion.line
                     x1="650" y1="400" x2="750" y2="350"
                     style={{ 
@@ -104,7 +96,6 @@ export default function WarehouseDrawing({ width = 800, height = 500 }: Warehous
                     variants={draw}
                     custom={1.2}
                 />
-                {/* Conexão superior direita (parede) */}
                 <motion.line
                     x1="650" y1="250" x2="750" y2="200"
                     style={{ 
@@ -114,7 +105,6 @@ export default function WarehouseDrawing({ width = 800, height = 500 }: Warehous
                     variants={draw}
                     custom={2.2}
                 />
-                {/* Conexão superior esquerda (parede)*/}
                 <motion.line
                     x1="150" y1="250" x2="250" y2="200"
                     style={{ 
@@ -124,7 +114,6 @@ export default function WarehouseDrawing({ width = 800, height = 500 }: Warehous
                     variants={draw}
                     custom={2.2}
                 />
-                {/* Viga mestre do telhado (profundidade) */}
                 <motion.line
                     x1="400" y1="150" x2="500" y2="100"
                     style={{ 
@@ -197,7 +186,6 @@ export default function WarehouseDrawing({ width = 800, height = 500 }: Warehous
                     variants={draw}
                     custom={3.5}
                 />
-                {/* Vigas do telhado */}
                 <motion.line
                     x1="275" y1="200" x2="375" y2="150"
                     style={{ 
