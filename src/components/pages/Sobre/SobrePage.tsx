@@ -13,7 +13,7 @@ const SobrePage: React.FC = () => {
 
             <div className={styles.container}>
             
-                <h2 className={styles.mainTitle}>Conheça mais sobre nossos pilares institucionais</h2>
+                <h2 className={styles.mainTitle}>Conheça nossos pilares institucionais</h2>
 
                 <div className={styles.missaoGrid}>
                     <article className={styles.missaoCard}>

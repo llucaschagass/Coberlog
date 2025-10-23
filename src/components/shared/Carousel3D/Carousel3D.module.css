@@ -102,48 +102,50 @@
   to { transform: rotateY(-360deg); }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .container {
-    width: 200px;
-    perspective: 600px;
+    transform: scale(0.9);
   }
 
-  .carousel__face {
-    width: 180px;
-    height: 120px;
+  .faceLogo {
+    width: 70%;
+  }
+
+  .faceContent {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    transform: scale(0.55);
+  }
+
+  .faceLogo {
+    width: 80%;
   }
 
   .faceContent {
     font-size: 1rem;
   }
-
-  .faceLogo {
-    width: 70%;
-    max-width: 100px;
-  }
-
-  .carousel__face:nth-child(n) {
-    transform: rotateY(calc((var(--i) * 36deg))) translateZ(280px);
-  }
 }
 
 @media (max-width: 480px) {
   .container {
-    width: 160px;
-    perspective: 500px;
+    transform: scale(0.38);
   }
 
-  .carousel__face {
-    width: 150px;
-    height: 100px;
-  }
-
-  .faceContent {
-    font-size: 0.9rem;
+  .carousel {
+    transform-origin: center;
+    width: 100%;
+    transform: translateX(-50%) rotateY(var(--rotateY));
   }
 
   .faceLogo {
-    width: 75%;
-    max-width: 80px;
+    width: 90%;
+  }
+
+  .faceContent {
+    font-size: 0.85rem;
   }
 }
