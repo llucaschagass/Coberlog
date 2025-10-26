@@ -1,17 +1,16 @@
 import styles from './Carousel3D.module.css';
-import logo from '../../../assets/images/logo-png-original-edited.png';
 
 const facesContent = [
+    { type: 'text', content: '' },
     { type: 'text', content: 'Segurança' },
-    { type: 'image', content: logo },
+    { type: 'text', content: '' },
     { type: 'text', content: 'Qualidade' },
-    { type: 'image', content: logo },
+    { type: 'text', content: '' },
     { type: 'text', content: 'Sustentabilidade' },
-    { type: 'image', content: logo },
+    { type: 'text', content: '' },
     { type: 'text', content: 'Responsabilidade' },
-    { type: 'image', content: logo },
+    { type: 'text', content: '' },
     { type: 'text', content: 'Inovação' },
-    { type: 'image', content: logo },
 ];
 
 export function Carousel3D() {
