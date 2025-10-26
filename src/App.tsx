@@ -9,8 +9,8 @@ import Footer from './components/shared/Footer/Footer';
 import ScrollUpButton from './components/shared/ScroollUp/ScrollUp';
 import WhatsAppButton from './components/shared/WhatsAppButton/WhatsAppButton';
 import PreFooter from './components/shared/PreFooter/PreFooter';
+import ScrollToTop from './components/shared/ScrollToTop/ScrollToTop';
 import './App.css';
-
 
 export default function App() {
   return (
@@ -22,6 +22,8 @@ export default function App() {
         phoneNumber="553131816200"
         message="Olá! Vim pelo site da COBERLOG." 
       />
+
+      <ScrollToTop />
       
       <Header />
 
