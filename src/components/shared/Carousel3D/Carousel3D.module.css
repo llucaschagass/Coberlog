@@ -49,6 +49,10 @@
 
 .carousel__face:nth-child(1)  {
   background-image: url("../../../assets/images/carrossel-img-1.BMP");
+  background-position: center;
+  background-size: contain;
+  background-color: var(--white);
+  background-repeat: no-repeat;
   transform: rotateY(  0deg) translateZ(360px);
 }
 
@@ -63,6 +67,10 @@
 
 .carousel__face:nth-child(3)  {
   background-image: url("../../../assets/images/carrossel-img-2.BMP");
+  background-position: center;
+  background-size: contain;
+  background-color: var(--white);
+  background-repeat: no-repeat;
   transform: rotateY( 72deg) translateZ(360px);
 }
 
@@ -77,6 +85,10 @@
 
 .carousel__face:nth-child(5)  {
   background-image: url("../../../assets/images/carrossel-img-3.BMP");
+  background-position: center;
+  background-size: contain;
+  background-color: var(--white);
+  background-repeat: no-repeat;
   transform: rotateY(144deg) translateZ(360px);
 }
 
@@ -91,6 +103,10 @@
 
 .carousel__face:nth-child(7)  {
   background-image: url("../../../assets/images/carrossel-img-4.JPG");
+  background-position: center;
+  background-size: contain;
+  background-color: var(--white);
+  background-repeat: no-repeat;
   transform: rotateY(216deg) translateZ(360px);
 }
 
@@ -105,6 +121,10 @@
 
 .carousel__face:nth-child(9)  {
   background-image: url("../../../assets/images/carrossel-img-5.JPG");
+  background-position: center;
+  background-size: contain;
+  background-color: var(--white);
+  background-repeat: no-repeat;
   transform: rotateY(288deg) translateZ(360px);
 }
 
