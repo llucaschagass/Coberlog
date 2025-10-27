@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './ProdutosPage.module.css';
 import placeholder from '../../../assets/images/placeholder.jpg';
 import imgLonado1 from '../../../assets/images/galpao-lonado-1.jpeg';
-import imgLonado2 from '../../../assets/images/galpao-lonado-2.jpeg';
+import imgLonado2 from '../../../assets/images/galpao-lonado-2.png';
 import imgMetalico1 from '../../../assets/images/galpao-metalico-1.jpeg';
 import imgTenda1 from '../../../assets/images/tenda-piramidal.jpeg';
 import imgMezanino1 from '../../../assets/images/mezanino-metalico-1.jpeg';
@@ -15,11 +15,11 @@ const productsData = {
         image: [imgLonado1, imgLonado2],
         content: (
             <>
-                <p>Nossos Galpões são treliçados; fabricados em Aço Carbono Galvanizado e desenvolvidos com tecnologia de ponta por nosso time de Engenharia. Os projetos flexíveis possibilitam montagem rápida de Galpões de 10 à 50 metros de largura, com pé direito de 5 à 10 metros de altura e comprimento indeterminado, de acordo com sua necessidade.</p>
-                <p>Os Galpões COBERLOG são projetados e fabricados com observância às todas as normas regulamentadoras que tangem a fabricação de edificações metálicas e lonadas, assegurando a estanqueidade dos galpões, segurança e resistência à ventos e intempéries.</p>
-                <p>Os projetos desenvolvidos para atendimento ao seu negócio, podem ser equipados com acessórios de acordo com a necessidade de cada operação, como a instalação de Sistemas SPDA, Iluminação em LED, conforto térmico por exaustores Eólicos ou Cycloar, Calhas Metálicas, Sistemas de Coleta e Armazenamento de água pluvial e demais dispositivos de segurança e conforto operacional que temos à oferecer em nosso mix de produtos.</p>
-                <p>A qualidade dos nossos produtos é garantida pela COBERLOG com a tranquilidade que só uma empresa sólida pode oferecer. Nossos processos de fabricação e montagem são executados por profissionais experientes, capacitados e acompanhados pelos nossos controles de qualidade e políticas internas.</p>
-                <p>A matéria prima utilizada em nossos produtos é adquira de fornecedores conceituados no mercado nacional e internacional, também com a qualidade garantida de grandes marcas.</p>
+                <p>Nossos Galpões são treliçados, fabricados em aço carbono galvanizado e desenvolvidos com tecnologia de ponta por nosso time de Engenharia. Os projetos flexíveis possibilitam montagem rápida de galpões com larguras entre 10 à 50 metros, pé direito de 5 à 10 metros e comprimento variável, conforme sua necessidade.</p>
+                <p>Os galpões COBERLOG são projetados e fabricados em conformidade com todas as normas regulamentadoras relativas à fabricação de edificações metálicas e lonadas, assegurando estanqueidade, segurança e resistência contra ventos e intempéries.</p>
+                <p>Os projetos desenvolvidos para atender ao seu negócio podem ser equipados com acessórios conforme a necessidade de cada operação, como instalação de sistemas SPDA, iluminação em LED, conforto térmico por exaustores eólicos ou Cycloar, calhas metálicas, sistemas de coleta e armazenamento de água pluvial, além de outros dispositivos de segurança e conforto operacional presentes em nosso mix de produtos.</p>
+                <p>A qualidade dos nossos produtos é garantida pela COBERLOG, com a tranquilidade que só uma empresa sólida pode oferecer. Nossos processos de fabricação e montagem são executados por profissionais experientes, capacitados e acompanhados por rigorosos controles de qualidade e políticas internas.</p>
+                <p>A matéria-prima utilizada em nossos produtos é adquirida de fornecedores conceituados no mercado nacional e internacional, todos com a qualidade assegurada por grandes marcas.</p>
             </>
         )
     },
@@ -28,8 +28,8 @@ const productsData = {
         image: [imgMetalico1],
         content: (
             <>
-                <p>Com o objetivo de atender às particularidades de cada negócio, a COBERLOG possui uma linha de Galpões com revestimento, cobertura e fechamentos laterais em telhas metálicas.</p>
-                <p>A tecnologia que caracteriza a flexibilidade e agilidade na montagem dos nossos projetos, também é aplicada nos Galpões Metálicos COBERLOG, não descaracterizando a condição de alta produtividade nas montagens devido à robustez da das estruturas ou edificações 100% metálicas.</p>
+                <p>Com o objetivo de atender às particularidades de cada negócio, a COBERLOG oferece uma linha de galpões com revestimento, cobertura e fechamentos laterais em telhas metálicas.</p>
+                <p>A tecnologia que garante flexibilidade e agilidade na montagem dos nossos projetos também é aplicada nos Galpões Metálicos COBERLOG, sem comprometer a alta produtividade das montagens, graças à robustez das estruturas e ao fato de serem edificações 100% metálicas.</p>
             </>
         )
     },
@@ -38,10 +38,10 @@ const productsData = {
         image: [imgTenda1],
         content: (
             <>
-                <p>As Tendas COBERLOG possuem uma vasta aplicabilidade quando a necessidade é por cobertura de pequenas áreas, seja na indústria, no agro negócio ou na montagem de eventos.</p>
-                <p>Sua versatilidade, eficiência e simplicidade de montagem possibilitam a rápida cobertura de áreas para abrigo de pessoas, armazenamento de produtos e montagem de áreas de vivência em canteiro de obras industriais ou da Construção civil.</p>
-                <p>Nossas Tendas Piramidais são fabricadas em aço carbono com perfil quadrado e lonas de alta qualidade e resistência para o dia a dia. Podem ser apenas teto ou com fechamentos laterais e frontais caso necessário.</p>
-                <p>A identidade de marca da sua empresa também é valorizada nas Tendas COBERLOG. A cor das estruturas, lonas e logomarca da sua empresa ou evento podem ser consideradas no momento da aquisição.</p>
+                <p>As Tendas COBERLOG possuem ampla aplicabilidade quando a necessidade é a cobertura de pequenas áreas, seja na indústria, no agronegócio ou na realização de eventos.</p>
+                <p>Sua versatilidade, eficiência e simplicidade de montagem permitem a rápida cobertura de áreas para abrigo de pessoas, armazenamento de produtos ou montagem de espaços de vivência em canteiros de obras industriais ou da construção civil.</p>
+                <p>Nossas Tendas Piramidais são fabricadas em aço carbono com perfil quadrado e lonas de alta qualidade e resistência, adequadas para o uso diário. Podem ser fornecidas apenas como teto ou com fechamentos laterais e frontais, conforme a necessidade.</p>
+                <p>A identidade visual da sua empresa também é valorizada nas Tendas COBERLOG. A cor das estruturas, das lonas e a aplicação da logomarca da sua empresa ou evento podem ser definidas no momento da aquisição.</p>
             </>
         )
     },
@@ -50,8 +50,8 @@ const productsData = {
         image: [imgMezanino1],
         content: (
             <>
-                <p>A indisponibilidade de áreas para expansão de produção, armazenamento ou mesmo de áreas administrativas é uma realidade no mercado, onde o metro quadrado é cada vez mais caro e escasso, fazendo com que as empresas precisem identificar formas de um melhor aproveitamento dos espaços disponíveis.</p>
-                <p>Uma solução possível oferecida pela COBERLOG é a verticalização dessas áreas através de Mezaninos Metálicos, que são calculados e projetados de acordo com cada situação.</p>
+                <p>A indisponibilidade de áreas para expansão de produção, armazenamento ou mesmo de espaços administrativos é uma realidade no mercado, onde o metro quadrado se torna cada vez mais caro e escasso. Isso faz com que as empresas precisem identificar maneiras de aproveitar melhor os espaços disponíveis.</p>
+                <p>Uma solução eficiente oferecida pela COBERLOG é a verticalização dessas áreas por meio de Mezaninos Metálicos, calculados e projetados de acordo com cada situação.</p>
             </>
         )
     },
@@ -60,12 +60,12 @@ const productsData = {
         image: [imgSpda1, imgSpda2],
         content: (
             <>
-                <p>Alguns acessórios devem ser considerados em projetos e compreendidos muito além de suas atribuições de conforto e qualidade.</p>
-                <p>Os Sistemas de SPDA e Iluminação em LED são exemplos importantes quando o assunto é segurança de pessoas e patrimônio mobilizado.</p>
-                <p>A COBERLOG oferece aos seus clientes o desenvolvimento e execução de projetos de Proteção Contra Descargas Atmosféricas SPDA Gaiola de Faraday, em edificações próprias e em edificações de seus clientes.</p>
-                <p>A iluminação adequada dos ambientes, além de uma condição de conforto para as pessoas que ali trabalham, gera resultados positivos para as empresas, como aumento de produtividade, qualidade e segurança nas operações, principalmente quando são utilizados equipamentos de movimentação de carga.</p>
-                <p>Observando isso, a COBERLOG sugere e flexibiliza a instalação de Sistemas de Iluminação em LED em suas estruturas, sejam elas para locação ou aquisição pelos clientes.</p>
-                <p>Não está condicionada à contratação de qualquer acessório em contratos de locação ou na aquisição dos Galpões COBERLOG.</p>
+                <p>Alguns acessórios devem ser considerados em projetos, indo muito além de suas funções de conforto e qualidade.</p>
+                <p>Os sistemas de SPDA e iluminação em LED são exemplos essenciais quando o assunto é a segurança de pessoas e do patrimônio mobilizado.</p>
+                <p>A COBERLOG oferece aos seus clientes o desenvolvimento e a execução de projetos de Proteção contra Descargas Atmosféricas (SPDA – Gaiola de Faraday), tanto em edificações próprias quanto em edificações de clientes.</p>
+                <p>A iluminação adequada dos ambientes não apenas proporciona conforto às pessoas que ali trabalham, como também gera resultados positivos para as empresas, como aumento de produtividade, melhoria da qualidade e segurança nas operações, principalmente quando há utilização de equipamentos de movimentação de carga.</p>
+                <p>Considerando isso, a COBERLOG sugere e flexibiliza a instalação de sistemas de iluminação em LED em suas estruturas, seja para locação ou aquisição pelos clientes.</p>
+                <p>A contratação de qualquer acessório não é obrigatória em contratos de locação ou na aquisição de galpões COBERLOG.</p>
             </>
         )
     }

@@ -22,10 +22,10 @@ const HomePage: React.FC = () => {
                 <div className={styles.aboutText}>
                     <h2>QUEM SOMOS?</h2>
                     <p>
-                        Somos a COBERLOG, uma empresa especializada em fabricação e montagem de Galpões Lonados e Metálicos, bem como estruturas flexíveis ou definitivas para atendimento a demandas industriais, voltadas a áreas produtivas e de armazenagem.
+                        Somos a COBERLOG, uma empresa especializada na fabricação e montagem de Galpões Lonados e Metálicos, além de estruturas flexíveis ou definitivas para atender demandas industriais voltadas a áreas produtivas e de armazenagem.
                     </p>
                     <p>
-                        Com experiência de 20 anos de mercado, nossos profissionais estão aptos a entender as necessidades de nossos clientes e apresentar soluções ágeis e inovadoras em coberturas para aumento de capacidade de armazenamento e produção, de forma rápida, segura e com custo inferior aos projetos convencionais.
+                        Com 20 anos de experiência no mercado, nossos profissionais estão aptos a compreender as necessidades dos clientes e apresentar soluções ágeis e inovadoras em coberturas, que aumentam a capacidade de armazenamento e produção de forma rápida, segura e com custo inferior aos projetos convencionais.
                     </p>
                 </div>
             </section>
@@ -34,28 +34,28 @@ const HomePage: React.FC = () => {
                 <div className={styles.featureItem}>
                     <FaCogs className={styles.featureIcon} />
                     <h3>Tecnologia de Ponta</h3>
-                    <p>Nossos Galpões são treliçados, fabricados em Aço Carbono Galvanizado e desenvolvidos por nosso time de Engenharia.</p>
+                    <p>Nossos galpões são treliçados, fabricados em aço carbono galvanizado e desenvolvidos por nosso time de engenharia.</p>
                 </div>
                 <div className={styles.featureItem}>
                     <FaBolt className={styles.featureIcon} />
                     <h3>Projetos Flexíveis</h3>
-                    <p>Montagem rápida de Galpões de 10 à 50 metros de largura, com pé direito de 5 à 10 metros e comprimento indeterminado.</p>
+                    <p>Montagem rápida de galpões com larguras entre 10 e 50 metros, pé direito de 5 a 10 metros e comprimento variável, de acordo com a necessidade.</p>
                 </div>
                 <div className={styles.featureItem}>
                     <FaShieldAlt className={styles.featureIcon} />
                     <h3>Qualidade e Segurança</h3>
-                    <p>Soluções inovadoras para construir estruturas modulares com máxima qualidade e segurança para sua operação.</p>
+                    <p>Oferecemos soluções inovadoras para a construção de estruturas modulares, garantindo máxima qualidade e segurança para sua operação.</p>
                 </div>
                 <div className={styles.featureItem}>
                     <FaDollarSign className={styles.featureIcon} />
                     <h3>Custo-Benefício</h3>
-                    <p>Oferecemos um custo inferior aos projetos de construção convencionais, com agilidade e sem perda de qualidade.</p>
+                    <p>Oferecemos um custo inferior ao dos projetos de construção convencionais, com agilidade e sem comprometer a qualidade.</p>
                 </div>
             </section>
 
             <section className={styles.ctaSection}>
                 <h2>É um prazer receber você aqui.</h2>
-                <p>Navegue pelo nosso site e veja todas as vantagens que a COBERLOG tem a oferecer ao seu negócio.</p>
+                <p>Navegue pelo nosso site e descubra todas as vantagens que a COBERLOG pode oferecer ao seu negócio.</p>
             </section>
         </div>
     );

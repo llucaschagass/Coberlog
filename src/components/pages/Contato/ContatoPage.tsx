@@ -55,8 +55,8 @@ const ContatoPage: React.FC = () => {
               <a href="tel:+553131816200" className={styles.infoItem}>
                 <FaPhoneAlt /> <span>(31) 3181-6200</span>
               </a>
-              <a href="mailto:contato@coberlog.com.br" className={styles.infoItem}>
-                <FaEnvelope /> <span>contato@coberlog.com.br</span>
+              <a href="mailto:comercial@coberlog.com.br" className={styles.infoItem}>
+                <FaEnvelope /> <span>comercial@coberlog.com.br</span>
               </a>
               <div className={styles.infoItem}>
                 <FaMapMarkerAlt /> <span>Funcionários - Belo Horizonte, MG</span>

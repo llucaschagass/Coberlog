@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import imageHome1 from '../../../assets/images/image-home-1.jpeg';
 import imageHome2 from '../../../assets/images/image-home-2.jpeg';
-import imageHome3 from '../../../assets/images/placeholder.jpg';
-import imageHome4 from '../../../assets/images/image-home-4.png';
-// import imageHome5 from '../../../assets/images/placeholder.jpg';
+import imageHome3 from '../../../assets/images/image-home-3.jpeg';
+import imageHome4 from '../../../assets/images/image-home-4.jpeg';
+import imageHome5 from '../../../assets/images/image-home-5.jpeg';
 import styles from './Carousel.module.css';
 
 const slides = [
@@ -12,7 +12,7 @@ const slides = [
     { src: imageHome2, caption: "Transformando desafios em soluções" },
     { src: imageHome3, caption: "Transformando desafios em soluções" },
     { src: imageHome4, caption: "Transformando desafios em soluções" },
-    { src: imageHome3, caption: "Transformando desafios em soluções" }
+    { src: imageHome5, caption: "Transformando desafios em soluções" }
 ];
 
 export function CarouselHome() {
