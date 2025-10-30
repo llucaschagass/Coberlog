@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from '../../../assets/images/logo-png-branca.png';
+import logoWhite from '../../../assets/images/logo-png-branca.png';
+import logoDark from '../../../assets/images/logo-png-original.png';
 import styles from './Header.module.css';
 import { ThemeToggle } from '../ThemeToggle/ThemeToggle';
 
@@ -14,8 +15,9 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
-        <div className={styles.logo}>
-          <img src={logo} alt="CoberLog Logo" />
+        <div className={styles.logoContainer}>
+          <img src={logoWhite} alt="Logo Coberlog" className={`${styles.logo} ${styles.white}`} />
+          <img src={logoDark}  alt="Logo Coberlog" className={`${styles.logo} ${styles.dark}`} />
         </div>
 
         <button className={styles.menuToggle} onClick={toggleMenu}>

@@ -8,3 +8,19 @@
 .logo {
   max-width: 250px;
 }
+
+.white { 
+  display: block; 
+}
+
+.dark  { 
+  display: none; 
+}
+
+:global(body.light-mode) .white { 
+  display: none; 
+}
+
+:global(body.light-mode) .dark  { 
+  display: block; 
+}

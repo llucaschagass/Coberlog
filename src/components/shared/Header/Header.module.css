@@ -19,20 +19,36 @@
   margin: 0 auto;
 }
 
-.logo {
+.logoContainer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.logo img {
+.logoContainer img {
   height: 85px;
   max-width: 100%;
   transition: filter 300ms;
 }
 
-.logo:hover {
+.logoContainer:hover {
   filter: drop-shadow(0 0 2em #646cff) brightness(1.4);
+}
+
+.white { 
+  display: block; 
+}
+
+.dark  { 
+  display: none; 
+}
+
+:global(body.light-mode) .white { 
+  display: none; 
+}
+
+:global(body.light-mode) .dark  { 
+  display: block; 
 }
 
 .menuToggle {
@@ -119,7 +135,7 @@
     border-bottom: none;
   }
 
-  .logo img {
+  .logoContainer img {
     height: 75px;
   }
 

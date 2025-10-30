@@ -20,28 +20,36 @@ footer {
   flex-wrap: wrap;
 }
 
-.logo2 {
+.logoContainer {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: auto;
-  padding: 0.5em;
-  transition: filter 300ms;
-  will-change: filter;
+  justify-content: center;
 }
 
-.logo2 img {
-  height: 90px;
-  margin: 0;
+.logoContainer img {
+  height: 85px;
   max-width: 100%;
+  transition: filter 300ms;
 }
 
-.logo2:hover {
+.logoContainer:hover {
   filter: drop-shadow(0 0 2em #646cff) brightness(1.4);
 }
 
-.logo2.react:hover {
-  filter: drop-shadow(0 0 2em #61dafb) brightness(1.4);
+.white { 
+  display: block; 
+}
+
+.dark  { 
+  display: none; 
+}
+
+:global(body.light-mode) .white { 
+  display: none; 
+}
+
+:global(body.light-mode) .dark  { 
+  display: block; 
 }
 
 .footerContent p {

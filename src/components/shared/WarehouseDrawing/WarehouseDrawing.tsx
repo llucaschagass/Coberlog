@@ -3,7 +3,8 @@ import { motion, type Variants } from "framer-motion"
 import styles from './WarehouseDrawing.module.css';
 import React from "react"
 import '../../../assets/styles/palette.css'
-import logo from '../../../assets/images/logo-png-brancaLOG.png';
+import logoWhite from '../../../assets/images/logo-png-brancaLOG.png';
+import logoDark from '../../../assets/images/logo-png-original.png';
 
 const draw: Variants = {
     hidden: { pathLength: 0, opacity: 0 },
@@ -206,7 +207,10 @@ export default function WarehouseDrawing({ width = 800 }: WarehouseDrawingProps)
                 />
             </motion.svg>
 
-            <img src={logo} alt="Logo Coberlog" className={styles.logo} />
+            <div className={styles.wrapper}>
+                <img src={logoWhite} alt="Logo Coberlog" className={`${styles.logo} ${styles.white}`} />
+                <img src={logoDark}  alt="Logo Coberlog" className={`${styles.logo} ${styles.dark}`} />
+            </div>
         </div>
     )
 }

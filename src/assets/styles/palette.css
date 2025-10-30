@@ -12,7 +12,7 @@
   --gray-500:   #7A7A7A;
   --gray-600:   #5C5C5C;
   --gray-700:   #3E3E3E;
-  --gray-800:   #242C33;
+  --gray-800:   #23292E;
   --gray-900:   #1B1C1E;
   --black:      #000000;
 
@@ -66,17 +66,17 @@
 
   /* Cores de Fundo */
   --background-body: var(--gray-50);
-  --background-surface: var(--white);
-  --background-button: var(--gray-100);
+  --background-surface: var(--gray-200);
+  --background-button: var(--gray-800);
   
   /* Cores de Texto */
-  --text-body: var(--gray-800);
+  --text-body: var(--black);
   --text-muted: var(--gray-500);
-  --text-on-primary: var(--white);
+  --text-on-primary: var(--black);
   --text-accent: var(--color-accent);
 
   /* Cores de Borda */
-  --border-default: var(--gray-200);
+  --border-default: var(--gray-500);
   --border-interactive: var(--color-accent);
 
   /* Cores de Feedback */
