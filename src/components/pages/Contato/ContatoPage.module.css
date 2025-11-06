@@ -149,7 +149,7 @@
 }
 
 .submitButton:hover:not(:disabled) {
-  background: var(--color-accent); 
+  background: var(--gray-500); 
   color: #FFFFFF;
   transform: scale(1.02);
 }

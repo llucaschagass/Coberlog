@@ -66,7 +66,6 @@
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.4);
   border: none;
-  color: var(--white);
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -76,6 +75,13 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+.carouselControlPrev svg,
+.carouselControlNext svg {
+  color: var(--white) !important;
+  fill: var(--white) !important;
+}
+
 
 .carouselControlPrev:hover,
 .carouselControlNext:hover {

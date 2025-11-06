@@ -71,7 +71,7 @@
   
   /* Cores de Texto */
   --text-body: var(--black);
-  --text-muted: var(--gray-500);
+  --text-muted: var(--gray-700);
   --text-on-primary: var(--black);
   --text-accent: var(--color-accent);
 
