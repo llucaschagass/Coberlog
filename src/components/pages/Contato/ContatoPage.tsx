@@ -24,13 +24,31 @@ const ContatoPage: React.FC = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault(); 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
     setStatus('submitting');
-    setTimeout(() => {
-      console.log('Formulário enviado com sucesso!');
-      setStatus('success');
-    }, 2000);
+
+    try {
+      const res = await fetch("https://coberlog.com.br/send-email.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+      if (data.success) {
+        setStatus("success");
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      } else {
+        console.error(data.message);
+        alert("Erro: " + data.message);
+        setStatus("idle");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Erro ao enviar");
+      setStatus("idle");
+    }
   };
 
   return (
