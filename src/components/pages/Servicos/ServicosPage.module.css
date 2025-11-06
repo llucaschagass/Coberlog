@@ -2,14 +2,14 @@
   max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
-  color: var(--white);
+  color: var(--text-body);
 }
 
 .introSection {
   text-align: center;
   max-width: 900px;
   margin: 0 auto 50px auto;
-  background-color: var(--black);
+  background-color: var(--background-surface);
   border-radius: 12px;
   padding: 20px;
 }
@@ -23,7 +23,7 @@
 }
 
 .introSection p {
-  color: var(--gray-500);
+  color: var(--text-muted);
   line-height: 1.7;
   font-size: 1.1rem;
   margin-bottom: 15px;
@@ -36,15 +36,15 @@
   flex-wrap: wrap;
   gap: 15px;
   margin-bottom: 40px;
-  border-bottom: 1px solid var(--gray-500);
+  border-bottom: 1px solid var(--border-default);
   padding-bottom: 20px;
   overflow-x: visible;
 }
 
 .tabsNav button {
   background-color: transparent;
-  border: 1px solid var(--gray-500);
-  color: var(--gray-200);
+  border: 1px solid var(--border-default);
+  color: var(--text-muted);
   padding: 10px 20px;
   border-radius: 20px;
   cursor: pointer;
@@ -55,13 +55,13 @@
 
 .tabsNav button:hover {
   background-color: var(--color-primary);
-  color: var(--black);
+  color: var(--text-on-primary);
   border-color: var(--color-primary);
 }
 
 .tabsNav button.active {
   background-color: var(--color-primary);
-  color: var(--black);
+  color: var(--text-on-primary);
   border-color: var(--color-primary);
   font-weight: bold;
 }
@@ -106,7 +106,7 @@
   gap: 15px;
   padding-bottom: 10px;
   font-size: 1.1rem;
-  color: var(--gray-200);
+  color: var(--text-body);
   margin-bottom: 15px;
 }
 
@@ -118,7 +118,7 @@
 
 @media (max-width: 992px) {
   .serviceDetail {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 35px;
   }
 

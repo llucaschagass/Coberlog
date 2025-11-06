@@ -20,7 +20,7 @@ const SobrePage: React.FC = () => {
                         <img src={missao} alt="Ícone de Missão" className={styles.cardIcon} />
                         <h3 className={styles.cardTitle}>MISSÃO</h3>
                         <p>
-                            Oferecer soluções logísticas inovadoras e sustentáveis, entregando uma 
+                            Oferecer soluções em armazenagens inovadoras e sustentáveis, entregando uma 
                             infraestrutura eficiente e personalizada que, com máxima segurança 
                             e funcionalidade, transforme os desafios de cada cliente em soluções.
                         </p>
