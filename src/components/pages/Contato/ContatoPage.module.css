@@ -1,6 +1,6 @@
 .contactPage {
   background: var(--background-body);
-  color: var(--white);
+  color: var(--text-body);
   padding: 80px 20px;
   display: flex;
   align-items: center;
@@ -13,13 +13,11 @@
 }
 
 .contactWrapper {
-  background: rgba(30, 30, 30, 0.7);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--background-surface);
+  border: 1px solid var(--border-default);
   border-radius: 20px;
   padding: 40px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
   display: grid;
   grid-template-columns: 1fr 1.1fr;
   gap: 50px;
@@ -35,10 +33,11 @@
   font-weight: 700;
   margin-bottom: 10px;
   line-height: 1.2;
+  color: var(--text-on-primary);
 }
 
 .subtitle {
-  color: var(--gray-500);
+  color: var(--text-muted);
   margin-bottom: 30px;
   line-height: 1.6;
 }
@@ -55,7 +54,7 @@
   align-items: center;
   gap: 15px;
   font-size: 1rem;
-  color: var(--gray-200);
+  color: var(--text-body);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -75,6 +74,7 @@
   border-radius: 10px;
   overflow: hidden;
   min-height: 250px;
+  border: 1px solid var(--border-default);
 }
 
 .formColumn {
@@ -98,19 +98,19 @@
 .formGroup textarea {
   width: 100%;
   padding: 20px 15px 10px 15px;
-  background-color: rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: var(--background-body); 
+  border: 1px solid var(--border-default);
   border-radius: 8px;
-  color: var(--white);
+  color: var(--text-body);
   font-size: 1rem;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 .formGroup label {
   position: absolute;
   top: 15px;
   left: 15px;
-  color: var(--gray-200);
+  color: var(--text-muted);
   pointer-events: none;
   transition: all 0.2s ease;
 }
@@ -134,7 +134,7 @@
 .submitButton {
   width: 100%;
   background: var(--color-primary);
-  color: var(--gray-900);
+  color: var(--text-on-primary-button, #fff);
   font-weight: bold;
   font-size: 1rem;
   padding: 15px;
@@ -144,13 +144,18 @@
   transition: all 0.3s ease;
 }
 
+.submitButton {
+    color: #FFFFFF; 
+}
+
 .submitButton:hover:not(:disabled) {
-  background: var(--white);
+  background: var(--color-accent); 
+  color: #FFFFFF;
   transform: scale(1.02);
 }
 
 .submitButton:disabled {
-  background-color: var(--gray-700);
+  background-color: var(--text-muted);
   cursor: wait;
 }
 
@@ -168,10 +173,11 @@
 .successMessage h2 {
   font-size: 2rem;
   margin-bottom: 10px;
+  color: var(--text-on-primary);
 }
 
 .successMessage p {
-  color: var(--gray-500);
+  color: var(--text-muted);
   font-size: 1.1rem;
 }
 
