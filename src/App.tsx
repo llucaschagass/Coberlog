@@ -10,6 +10,7 @@ import ScrollUpButton from './components/shared/ScroollUp/ScrollUp';
 import WhatsAppButton from './components/shared/WhatsAppButton/WhatsAppButton';
 import PreFooter from './components/shared/PreFooter/PreFooter';
 import ScrollToTop from './components/shared/ScrollToTop/ScrollToTop';
+import { ScrollBlurWrapper } from './components/shared/scroll-blur-wrapper';
 import './App.css';
 
 export default function App() {
@@ -27,15 +28,17 @@ export default function App() {
       
       <Header />
 
-      <main>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/sobre" element={<SobrePage />} />
-          <Route path="/contato" element={<ContatoPage />} />
-          <Route path="/produtos" element={<ProdutosPage />} />
-          <Route path="/servicos" element={<ServicosPage />} />
-        </Routes>
-      </main>
+      <ScrollBlurWrapper>
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/sobre" element={<SobrePage />} />
+            <Route path="/contato" element={<ContatoPage />} />
+            <Route path="/produtos" element={<ProdutosPage />} />
+            <Route path="/servicos" element={<ServicosPage />} />
+          </Routes>
+        </main>
+      </ScrollBlurWrapper>
 
       <PreFooter></PreFooter>
 
